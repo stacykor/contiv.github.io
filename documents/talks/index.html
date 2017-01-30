@@ -12,7 +12,7 @@
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <title>Getting Started - Contiv</title>
 
-    <link href="/assets/stylesheets/application-2b39eabd.css" rel="stylesheet"/>
+    <link href="/assets/stylesheets/application-8b7a6c5c.css" rel="stylesheet"/>
 
     <!--[if lt IE 9]><script src="/assets/javascripts/html5shiv-099439cc.js"></script><script src="/assets/javascripts/respond.min-1eb35b04.js"></script><![endif]-->
 
@@ -21,17 +21,19 @@
 
   <body id="page-Getting Started" class=" page-Getting Started layout-documents page-sub">
 
-<div id="header" class="navbar-static-top">
-  <div class="container">
-    <div class="row">
-      
+  <div class="navbar-jumbotron">
+    <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+      <div class="container">
         <div class="navbar-header">
-          <div class="navbar-brand">
-              <a class="logo" href="/">Contiv</a>
-            </a>
-          </div>
-          
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/" style="color:$white"> Contiv </a>
         </div>
+<<<<<<< HEAD
         <div class="buttons hidden-xs">
           <nav role="navigation">
             <ul class="main-links nav navbar-nav navbar-left">
@@ -51,11 +53,22 @@
                         </a></li>
             </ul>
           </nav>
+=======
+        <div class="collapse navbar-collapse" id="navbar">
+          <ul class="nav navbar-nav navbar-right main-nav">
+            <li><a href="/documents/">Docs</a></li>
+            <li><a href="https://github.com/contiv/install/releases">Download</a></li>
+             <li><a href="/documents/support/index.html">Support</a></li>
+            <li><a href="http://blogs.cisco.com/tag/contiv">Blog</a></li>
+            
+            <li><a href="https://github.com/contiv"><i class="fa fa-github"></i></a></li>
+            <li><a href="https://contiv.herokuapp.com/"><i class="fa fa-slack"></i></a></li>
+          </ul>
+>>>>>>> 919d1b6... UBER COMMIT
         </div>
-      
-    </div>
+      </div>
+    </nav>
   </div>
-</div>
 
 
 <div class="sidebar-overlay"></div>
@@ -97,32 +110,26 @@ GitHub</a></li>
 		<div class="col-md-3 col-sm-3 col-xs-12">
 					<div class="docs-sidebar hidden-print affix-top" role="complementary">
 			<hr>
-			<h3>User Guide</h3>
-			<ul class="nav docs-sidenav">
+			<h3>Release Notes</h3>
+			<ul class="nav">
 				<li>
-					<a href="/documents/gettingStarted/index.html">Getting Started</a>
-					<ul class="nav">
-						<li>
-							<a class="hasChildren" href="/documents/gettingStarted/networking/index.html">Networking</a>
+					<a href="/documents/releasenotes/beta.html">Beta</a>
+				</li>
+			</ul>
+			<hr>
+			<h3>Getting Started</h3>
 							<ul class="nav">
+							<li>
+								<a href="/documents/networking/features.html">Features</a>
+						    </li>
+						    <li>
+								<a href="/documents/networking/concepts.html">Concepts and Terminology</a>
+						    </li>
 								<li>
-									<a class="hasChildren" href="/documents/gettingStarted/networking/index.html#UsingVagrant">Single Machine</a>
-									<ul class="subnav">
-										<li>
-												<a href="/documents/gettingStarted/networking/swarm.html">Docker Swarm</a>
-										</li>
-										<li>
-												<a href="/documents/gettingStarted/networking/k8s.html">Kubernetes</a>
-										</li>
-										<li>
-												<a href="/documents/gettingStarted/networking/mesos.html">Mesos</a>
-										</li>
-										<li>
-												<a href="/documents/gettingStarted/networking/nomad.html">Nomad</a>
-										</li>
-									</ul>
+									<a href="/documents/gettingStarted/networking/quickstart.html">Quick Start</a>
 								</li>
 								<li>
+<<<<<<< HEAD
 									<a class="hasChildren" href="/documents/gettingStarted/networking/index.html#WithNetworkedServers">Multiple Servers</a>
 									<ul class="subnav">
 										<li>
@@ -156,16 +163,42 @@ GitHub</a></li>
 							</ul>
 						</li>
 					</ul>
+=======
+									<a href="https://github.com/contiv/install/releases">Install Contiv on Your Existing Container</a>
+									</li>
+								</ul>
+									<hr>
+			<h3>Admin Guide</h3>
+			<ul class="nav">
+				<li>
+					<a href="/documents/admin/index.html">Intro</a>
+>>>>>>> 919d1b6... UBER COMMIT
 				</li>
 				<li>
-					<a href="/documents/networking/index.html">Networking</a>
+				    <a href="/documents/admin/createTenant.html">Managing Tenants</a>
+				</li>
+				<li>
+				    <a href="/documents/admin/manageUsers.html">Managing Users</a>
+			    </li>		
+			    <li>
+				    <a href="/documents/admin/manageAuthorizations.html">Managing Authorizations</a>
+			    </li>
+			    <li>
+				    <a href="/documents/admin/createNodes.html">Managing Nodes</a>
+			    </li>
+			     <li>
+				    <a href="/documents/admin/manageNetworks.html">Managing Networks</a>
+			    </li>
+			    <li>
+				    <a href="/documents/admin/manageLDAP.html">Managing LDAP</a>
+			    </li>
+			</ul>
+				</li>
+			</ul>
+			<hr>
+			<h3>User Guide</h3>
+						
 					<ul class="nav">
-						<li>
-								<a href="/documents/networking/features.html">Features</a>
-						</li>
-						<li>
-								<a href="/documents/networking/concepts.html">Concepts and Terminology</a>
-						</li>
 						<li>
 								<a href="/documents/networking/policies.html">Policies</a>
 						</li>
@@ -257,18 +290,22 @@ GitHub</a></li>
 						<li>
 							<a href="/documents/samples/mcast.html">Multicast Examples</a>
 						</li>
-						<li>
-							<a href="/documents/samples/nomad.html">Nomad Examples</a>
-						</li>
 					</ul>
 				</ul>
 			<hr><p>
 			<h3>Reference</h3>
 				<ul class="nav docs-sidenav">
 					<ul class="subnav">
+<<<<<<< HEAD
 						<li><a href="https://godoc.org/github.com/contiv/contivmodel/client" target="_blank">Network API Reference</a><br></li>
 						<li><a href="https://godoc.org/github.com/contiv/volplugin/config" target="_blank">Storage API Reference</a><br></li>
 						<li><a href="https://godoc.org/github.com/contiv/cluster" target="_blank">Cluster API Reference</a><br></li>
+=======
+					    <li><a href="/documents/api/contiv.html" target="_blank">API Reference</a><br></li> 
+					    <li><a href="/documents/reference/netctlcli.html" target="_blank">CLI Reference</a><br></li> 
+						<li><a href="https://godoc.org/github.com/contiv/contivmodel/client" target="_blank">Contiv Model Client Library</a><br></li>
+						
+>>>>>>> 919d1b6... UBER COMMIT
 					</ul>
 				</ul>
 			<hr><p>
