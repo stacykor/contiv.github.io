@@ -170,7 +170,7 @@
   </url>
   <url>
     <loc>http://contiv.io/documents/networking/bgp.html</loc>
-     <lastmod>2017-02-14T00:00:00-08:00</lastmod>
+    <lastmod>2017-02-14T00:00:00-08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -229,12 +229,6 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://contiv.io/documents/networking/services.html</loc>
-    <lastmod>2017-02-14T00:00:00-08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>http://contiv.io/documents/reference/netctlcli.html</loc>
     <lastmod>2017-02-14T00:00:00-08:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -254,6 +248,12 @@
   </url>
   <url>
     <loc>http://contiv.io/documents/samples/mcast.html</loc>
+    <lastmod>2017-02-14T00:00:00-08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://contiv.io/documents/samples/nomad.html</loc>
     <lastmod>2017-02-14T00:00:00-08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -290,6 +290,12 @@
   </url>
   <url>
     <loc>http://contiv.io/</loc>
+    <lastmod>2017-02-14T00:00:00-08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://contiv.io/documents/networking/services.html</loc>
     <lastmod>2017-02-14T00:00:00-08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>

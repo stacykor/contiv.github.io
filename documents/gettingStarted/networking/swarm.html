@@ -107,7 +107,7 @@ GitHub</a></li>
 									<a href="/documents/gettingStarted/networking/quickstart.html">Quick Start</a>
 								</li>
 								<li>
-									<a href="https://github.com/contiv/install/releases">Install Contiv on Your Existing Container</a>
+ 									<a href="https://github.com/contiv/install/releases">Install Contiv on Your Existing Container</a>
 									</li>
 								</ul>
 									<hr>
@@ -140,6 +140,7 @@ GitHub</a></li>
 			<hr>
 			<h3>User Guide</h3>
 						
+                     
 					<ul class="nav">
 						<li>
 								<a href="/documents/networking/policies.html">Policies</a>
@@ -169,32 +170,6 @@ GitHub</a></li>
 						</li>
 					</ul>
 				</li>
-				<li>
-					<a href="/documents/storage/index.html">Storage</a>
-					<ul class="nav">
-						<li>
-								<a href="/documents/storage/architecture.html">Architecture</a>
-						</li>
-						<li>
-								<a href="/documents/storage/configuration.html">Configuration</a>
-						</li>
-						<li>
-								<a href="/documents/storage/containers.html">Creating a Container with a Volume</a>
-						</li>
-						<li>
-								<a href="/documents/storage/volcli.html">Volcli Reference</a>
-						</li>
-					</ul>
-				</li>
-				<li>
-					<a href="/documents/cluster/index.html">Cluster</a>
-					<ul class="nav">
-						<li>
-								<a href="/documents/cluster/concepts.html">Concepts and Terminology</a>
-						</li>
-						<li>
-								<a href="/documents/cluster/node-lifecycle.html">Node Lifecycle Management</a>
-						</li>
 					</ul>
 				</li>
 			</ul>
@@ -241,6 +216,7 @@ GitHub</a></li>
 					    <li><a href="/documents/api/contiv.html" target="_blank">API Reference</a><br></li> 
 					    <li><a href="/documents/reference/netctlcli.html" target="_blank">CLI Reference</a><br></li> 
 						<li><a href="https://godoc.org/github.com/contiv/contivmodel/client" target="_blank">Contiv Model Client Library</a><br></li>
+						
 					</ul>
 				</ul>
 			<hr><p>
@@ -324,13 +300,12 @@ group, then assign nodes to it.</p>
 <code>prod-web</code> policy to it.</p>
 <pre class="highlight plaintext"><code>$ netctl group create contiv-net web -policy=prod-web
 </code></pre>
-<p><em>Note</em>: Every endpoint group creates a seperate Docker network of the form <code>&lt;endpoint-group-name&gt;.&lt;network-name&gt;</code>.
+<p><em>Note</em>: Every endpoint group creates a seperate Docker network which has name of endpoint group.
 You can attach containers to these endpoint groups using the <code>--net</code> option in the <code>docker run</code> command.</p>
 
 <h2>Step 7: Attach a Container</h2>
 <p>Next, run a container and attach it to the endpoint group.
-The following command runs a Docker container and attaches it to the <code>web</code> EPG
-in the <code>contiv-net</code> network.</p>
+The following command runs a Docker container and attaches to the <code>contiv-net</code> network.</p>
 <p>You can get network name using <code>docker network ls</code> command. Look for netplugin as a driver.</p>
 <pre class="highlight plaintext"><code>$ docker run -itd --net contiv-net alpine sh
 </code></pre>
